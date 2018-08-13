@@ -24,7 +24,7 @@ public static class Program
           }
           
           WriteLine("**Environment**");
-          WriteLine($"Platform: .NET Core");
+          WriteLine($"Platform: .NET Coredasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd");
           WriteLine($"OS: {RuntimeInformation.OSDescription}");
           WriteLine();
     }
