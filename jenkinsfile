@@ -1,0 +1,21 @@
+pipeline {
+  environment {
+    registry = “HuyDNQ/testjenkins”
+    registryCredential = ‘huydnq’
+  }
+  agent any
+  stages {
+    stage(‘Cloning Git’) {
+      steps {
+        git ‘https://github.com/HuyDNQ/testjenkins.git'
+      }
+    }
+    stage(‘Building image’) {
+      steps{
+        script {
+          docker.build registry + “:01”
+        }
+      }
+    }
+  }
+}
