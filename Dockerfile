@@ -22,7 +22,7 @@ COPY tests/. .
 ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 
-FROM microsoft/dotnet:2.1-runtime AS runtime
+FROM microsoft/dotnet:2.1-runtime 
 WORKDIR /app
 COPY --from=build /app/dotnetapp/out ./
 ENTRYPOINT ["dotnet", "dotnetapp.dll"]
