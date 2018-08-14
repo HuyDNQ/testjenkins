@@ -50,7 +50,7 @@ public static class Program
     private static string GetBot() 
     {
             
-            return @" dotnet application :D
+            return @" dotnet application :D:D :D :D
       __________________
                         \
                         \
